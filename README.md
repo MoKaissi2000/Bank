@@ -32,45 +32,76 @@ Security Measures: Implementation of security protocols to protect user data and
 For Checking:
 
 delete_checking.php: prompts the user to enter an account number. The file will delete the entry in the table with the same account number.
+
 display_checkings.php: displays all the entries in the table. It will include all the attributes of the table which includes: userid, account number, last name, first name, balance, date, email, address, etc… 
-insert_checking.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table: 
+
+insert_checking.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table. 
+
 search_checking.php: will prompt the user to enter an account number. The file will display all the accounts tied to the account number in a similar manner to the display_checkings file.
+
 update_checking.php: will prompt the user to enter an account number. The file will also ask to update any information for that account in the table.
+
 deposit_checkings.php: will prompt the user to enter an account number along with the amount to be deposited.
+
 transfer_checkings.php: will prompt the user to enter the account numbers of the sender and receiver along with the transfer amount.
+
 withdraw_checkings.php: will prompt the user to enter an account number along with the amount to be withdrawn.
+
 All the html files are the exact same, providing the user interface to input the required information/fields. Each html file will have different fields to fill based on the requirements of the php file.
+
 Note: The same applies for the variants that have a 1 at the end. The difference is an error checking that makes sure that the account number entered is linked to the userid used to log in. Otherwise, the database will not allow the user to use the program.
 
 
 
 For Saving:
+
 delete_savings.php: prompts the user to enter an account number. The file will delete the entry in the table with the same account number.
+
 display_ savings.php: displays all the entries in the table. It will include all the attributes of the table which includes: userid, account number, last name, first name, balance, date, email, address, etc… 
-insert_ savings.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table: 
+
+insert_ savings.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table.
+
 search_ savings.php: will prompt the user to enter an account number. The file will display all the accounts tied to the account number in a similar manner to the display_savings file.
+
 update_ savings.php: will prompt the user to enter an account number. The file will also ask to update any information for that account in the table.
+
 deposit_ savings_transaction.php: will prompt the user to enter an account number along with the amount to be deposited.
+
 transfer_ savings_transaction.php: will prompt the user to enter the account numbers of the sender and receiver along with the transfer amount.
+
 withdraw_ savings_transaction.php: will prompt the user to enter an account number along with the amount to be withdrawn.
+
 Interest_calculations_savings_transaction.php: will check if it is the first day of the month and calculate the interest rate if it is. If it is not, the program will inform the user that it is not the first day yet.
+
 All the html files are the exact same, providing the user interface to input the required information/fields. Each html file will have different fields to fill based on the requirements of the php file.
+
 Note: The same applies for the variants that have a 1 at the end. The difference is an error checking that makes sure that the account number entered is linked to the userid used to log in. Otherwise, the database will not allow the user to use the program.
 
 
 
 
  For Investment:
+ 
 delete_investments.php: prompts the user to enter an account number. The file will delete the entry in the table with the same account number.
+
 display_investments.php: displays all the entries in the table. It will include all the attributes of the table which includes: userid, account number, last name, first name, balance, date, email, address, etc… 
-insert_investments.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table: 
+
+insert_investments.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table.
+
 search_investments.php: will prompt the user to enter an account number. The file will display all the accounts tied to the account number in a similar manner to the display_investments file.
+
 update_investments.php: will prompt the user to enter an account number. The file will also ask to update any information for that account in the table.
+
 deposit_investments _transaction.php: will prompt the user to enter an account number along with the amount to be deposited.
+
 withdraw_investments _transaction.php: will prompt the user to enter an account number along with the amount to be withdrawn. The program will check if a year has past since the most recent transaction.
+
 transfer_ investments_transaction.php: will prompt the user to enter the account numbers of the sender and receiver along with the transfer amount.
-interest_calculations_investments_transaction.php: will check if it is the first day of the month and calculate the interest rate if it is. If it is not, the program will inform the user that it is not the first day yet. 
+
+interest_calculations_investments_transaction.php: will check if it is the first day of the month and calculate the interest rate if it is. If it is not, the program will inform the user that it is not the first day yet.
+
 All the html files are the exact same, providing the user interface to input the required information/fields. Each html file will have different fields to fill based on the requirements of the php file.
+
 Note: The same applies for the variants that have a 1 at the end. The difference is an error checking that makes sure that the account number entered is linked to the userid used to log in. Otherwise, the database will not allow the user to use the program.
 
 
@@ -79,8 +110,11 @@ Note: The same applies for the variants that have a 1 at the end. The difference
 For Checking Transaction:
 
 delete_checkings_transaction.php: will prompt the user to enter the transaction ID associated with the transaction and will delete the transaction.
+
 display_checkings_transaction.php: displays all the entries in the table. It will include all the attributes of the table.
+
 search_checkings_transaction.php: will prompt the user to enter a transaction ID. The file will display all the transactions tied to the ID in a similar manner to the display_checkings_transaction file.
+
 update_checkings_transaction.php: will prompt the user to enter a transaction ID. The file will also ask to update any information for that transaction in the table.
 
 
@@ -89,8 +123,11 @@ update_checkings_transaction.php: will prompt the user to enter a transaction ID
 For Saving Transaction:
 
 delete_savings_transaction.php: will prompt the user to enter the transaction ID associated with the transaction and will delete the transaction.
+
 display_savings_transaction.php: displays all the entries in the table. It will include all the attributes of the table.
+
 search_savings_transaction.php: will prompt the user to enter a transaction ID. The file will display all the transactions tied to the ID in a similar manner to the display_savings_transaction file.
+
 update_savings_transaction.php: will prompt the user to enter a transaction ID. The file will also ask to update any information for that transaction in the table.
 
 
@@ -99,16 +136,24 @@ update_savings_transaction.php: will prompt the user to enter a transaction ID. 
 For Investment Transaction:
 
 delete_investment_transaction.php: will prompt the user to enter the transaction ID associated with the transaction and will delete the transaction.
+
 display_investment_transaction.php: displays all the entries in the table. It will include all the attributes of the table.
+
 search_investment_transaction.php: will prompt the user to enter a transaction ID. The file will display all the transactions tied to the ID in a similar manner to the display_investment_transaction file.
+
 update_investment_transaction.php: will prompt the user to enter a transaction ID. The file will also ask to update any information for that transaction in the table.
+
 All the html files are the exact same, providing the user interface to input the required information/fields. Each html file will have different fields to fill based on the requirements of the php file.
 
 
 	
 Test folder:
+
 login.php: will ask whether the user is an administrator or a regular user. If they are a regular user, they will input their userid then will be taken to the dashboard. If the userid is not valid, they will be prompted to create a new account with the userid.
+
 daily_summary.php: If the administrator option was chosen in the login page, the file will print out all of the transactions that happened in the current day for all 3 types of accounts.
 logout.php: will logout the user.
+
 register.php: if the userid is not valid in the login page, they will be taken to this page where they will be prompted to fill all the attributes of the login table.
+
 dashboard.php: If the userid is valid, they will be taken to the dashboard where the options for checking, savings, and investment will be present. The file will allow the user to go through all of the operations of all 3 different accounts.
