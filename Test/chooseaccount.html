@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open an Account</title>
+    <script>
+        function showAccountForm(accountType) {
+            document.getElementById('savingsForm').style.display = 'none';
+            document.getElementById('checkingForm').style.display = 'none';
+            document.getElementById('investmentForm').style.display = 'none';
+            
+            if (accountType === 'savings') {
+                document.getElementById('savingsForm').style.display = 'block';
+            } else if (accountType === 'checking') {
+                document.getElementById('checkingForm').style.display = 'block';
+            } else if (accountType === 'investment') {
+                document.getElementById('investmentForm').style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Open a New Account</h1>
+
+    <label for="accountType">Choose an account type:</label>
+    <select id="accountType" name="accountType" onchange="showAccountForm(this.value)">
+        <option value="">--Select an account type--</option>
+        <option value="savings">Savings Account</option>
+        <option value="checking">Checking Account</option>
+        <option value="investment">Investment Account</option>
+    </select>
+
+    <form id="savingsForm" action="account_processor.php" method="post" style="display:none;">
+        <!-- Input fields for Savings account -->
+        <!-- Include a hidden field to indicate the account type -->
+        <input type="hidden" name="accountType" value="savings">
+        <!-- Other fields... -->
+        <input type="submit" value="Open Savings Account">
+    </form>
+
+    <form id="checkingForm" action="account_processor.php" method="post" style="display:none;">
+        <!-- Input fields for Checking account -->
+        <input type="hidden" name="accountType" value="checking">
+        <!-- Other fields... -->
+        <input type="submit" value="Open Checking Account">
+    </form>
+
+    <form id="investmentForm" action="account_processor.php" method="post" style="display:none;">
+        <!-- Input fields for Investment account -->
+        <input type="hidden" name="accountType" value="investment">
+        <!-- Other fields... -->
+        <input type="submit" value="Open Investment Account">
+    </form>
+
+</body>
+</html>
