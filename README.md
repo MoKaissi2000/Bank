@@ -1,5 +1,5 @@
 # Bank
-2.	Overview of documentation contents:
+1.	**Overview of documentation contents:**
 -	Software Requirement Specification (SRS): The software will present the user with a login page that will ask the user to input their id. They will be provided with the basic services that they need within a bank. They will be able to: 
 •	Create Accounts: Open Savings, Checking, or Investment accounts.
 •	Manage Accounts: Perform operations such as withdrawals, deposits, transfers, and view account balances and transaction histories.
@@ -26,7 +26,7 @@ Security Measures: Implementation of security protocols to protect user data and
 •	Documentation of Results: Recording the results of all tests and making necessary modifications based on feedback. The local database used for testing ensures that no actual banking data is altered or interfered with during the testing process.
 
 
-3.	Description of all files: We have created the .php and .html files for search, update, insert, delete, and display for all the 3 account types along with their transaction tables. In addition, we have duplicated the files, inserting a 1 at the end (ex: insert_checkings and insert_checkings1). They are inherently the same files, with the modification for the files that end with a 1, being tied to a user. To further explain, if we call for display_checkings.php, the database will display every checking account that is an entry in the checking table. On the other hand, display_checkings1.php will only display the checking accounts tied to the userid that was used to login to the database (ex: if a userid was 1111, then display_checkings1.php will display every entry that has a userid of 1111). Therefore, the files without the 1 at the end are general purpose use on the developer end, while the files with a 1 at the end are used by the user. All the files linked to the login and dashboard files are the files with the 1 at the end. The files with a 1 at the end are the main ones being used and called for by the program.
+2.	**Description of all files:** We have created the .php and .html files for search, update, insert, delete, and display for all the 3 account types along with their transaction tables. In addition, we have duplicated the files, inserting a 1 at the end (ex: insert_checkings and insert_checkings1). They are inherently the same files, with the modification for the files that end with a 1, being tied to a user. To further explain, if we call for display_checkings.php, the database will display every checking account that is an entry in the checking table. On the other hand, display_checkings1.php will only display the checking accounts tied to the userid that was used to login to the database (ex: if a userid was 1111, then display_checkings1.php will display every entry that has a userid of 1111). Therefore, the files without the 1 at the end are general purpose use on the developer end, while the files with a 1 at the end are used by the user. All the files linked to the login and dashboard files are the files with the 1 at the end. The files with a 1 at the end are the main ones being used and called for by the program.
 
 
 For Checking:
