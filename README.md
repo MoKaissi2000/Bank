@@ -30,6 +30,7 @@ Security Measures: Implementation of security protocols to protect user data and
 
 
 For Checking:
+
 delete_checking.php: prompts the user to enter an account number. The file will delete the entry in the table with the same account number.
 display_checkings.php: displays all the entries in the table. It will include all the attributes of the table which includes: userid, account number, last name, first name, balance, date, email, address, etc… 
 insert_checking.php: will prompt the user to create a new account and enter in the fields for all the attributes present in the table: 
